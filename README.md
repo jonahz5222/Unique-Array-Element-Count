@@ -1,11 +1,13 @@
 # Unique Array Element Count Explanation
-A description of an algorithm to determine the number of unique elements in an array, implemented using tuples and closures in Swift 4 as function in an extension of the built in Array type.
+#### A description of an algorithm to determine the number of unique elements in an array, implemented using tuples and closures in Swift 4 as function in an extension of the built in Array type.
 
 Source code can be found [here](https://content.techinnovator.info/mu/sp19/INFOTC4445/challenges/Array%20Unique%20Element%20Count%20Extension/ArrayUniqueElementCount1.playground.zip). It would be very helpful to follow along with this as you read, and I highly suggest it.
 
-This function is contained within an extension. An extension is a method of adding your own properties and functions onto an already defined type. You can implement this on your own, custom types, or on included types. In this case we are doing the latter, extending the built in Array type. The first thing we do is apply the `where` keyword to our extension. 
+Our function and algorithm is contained within an extension. An extension is a method of adding your own properties and functions onto an already defined type. You can implement this on your own, custom types, or on included types. In this case we are doing the latter, extending the built in Array type. The first thing we do is apply the `where` keyword to our extension. 
 
-```swift extension Array where Element: Comparable```
+```swift 
+extension Array where Element: Comparable
+```
 
 This limits the extension to arrays in which the elements contained in it comply to the `Comparable` protocol. This means that all of the elements contained in the array must be able to be 'Compared' using the comparision operators: 
 `<, <=, >=, and >`
